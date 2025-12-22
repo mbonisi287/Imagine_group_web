@@ -1,0 +1,126 @@
+.statusProgress{
+    background-color: green;
+    color: #ffffff;
+    padding: 2% 10%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0px;
+    font-size: medium;
+
+}
+
+.statusReview{
+    background-color: #FFBF00;
+    color: #ffffff;
+    margin: 20px 0px;
+    padding: 2% 10%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: medium;
+
+}
+
+.amtAlign{
+    text-align: right;
+}
+
+.searchDiv{
+    margin-bottom: 10px;
+}
+
+.searchArea{
+    padding: 2%;
+    color: #000000;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+
+ .verifyH3{
+    font-size: large;
+  }
+
+  .verifyRows{
+    border-radius: 20px;
+    padding: 2% 1%;
+    background-color: #ffffff;
+    margin-top: 10px;
+  }
+
+  .verifySuccessRows{
+    width: 100%;
+  }
+
+.verifySuccessRows{
+    width: 100%;
+    padding: 1%;
+  }
+
+  .voucherDets{
+    text-align: left;
+  }
+
+
+
+
+  .spanData{
+    font-size: 1.2em;
+    font-weight: 700;
+    color:  #fd7e14;
+  }
+
+  .vSpanData{
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .pEmail{
+    font-weight: bold;
+  }
+  .planeImg{
+    width: 4%;
+  }
+
+
+    .voucherItem{
+    font-size: 1.0em;
+    color: #000000;
+  }
+
+.custom-modal-width {
+  width: 90vw;
+  max-width: 90vw;
+  
+}
+
+
+.projRow{
+    background-color: #fff;
+    color: #000;
+    font-size: medium;
+
+    margin: 5px 0px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.projSpan{
+    display: block;
+}
+
+.projInnerSp{
+  font-weight: 600;
+  font-size: large;
+}
+
+.closeDate{
+    color: red;
+    font-weight:600;
+}
+
+.noSpan{
+    color: red;
+    font-size: 1.2em;
+    font-weight: 500;
+}

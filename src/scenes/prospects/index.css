@@ -1,0 +1,12 @@
+.progressArea{
+    color: #ffffff;
+    background-color: #000000;
+    padding: 2%;
+    border-radius: 25px;
+}
+
+.notesDangerSpan{
+    color: red;
+    font-size:medium;
+    font-weight: bold;
+}

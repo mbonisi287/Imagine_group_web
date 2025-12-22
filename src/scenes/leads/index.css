@@ -1,0 +1,22 @@
+.progressArea{
+    color: #ffffff;
+    background-color: #000000;
+    padding: 2%;
+    border-radius: 25px;
+}
+
+.noSpan{
+    color: red;
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.yesSpan{
+    color: green;
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.singleLeadTable{
+    font-size: medium;
+}

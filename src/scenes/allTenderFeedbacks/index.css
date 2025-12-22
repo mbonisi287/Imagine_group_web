@@ -1,0 +1,11 @@
+.colHide{
+    display: none;
+}
+
+.modalRow{
+    background-color: lightgreen;
+    margin: 2px 0px;
+    padding: 1%;
+    border-radius: 25px;
+
+}

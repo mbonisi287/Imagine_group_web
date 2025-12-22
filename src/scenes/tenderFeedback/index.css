@@ -1,0 +1,27 @@
+.projectRow{
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 1%;
+    font-size:medium;
+}
+
+.feedbackSection{
+    background-color: darkgray;
+    padding: 1%;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.previousFbSection{
+    background-color: darkgray;
+    padding: 1%;
+    border-radius: 25px; 
+    margin-top: 10px;
+}
+
+.innerSpan{
+    color:#000000;
+    font-weight: 400;
+    font-size: medium;
+}

@@ -1,0 +1,18 @@
+.noteRow{
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 1% 1%;
+    font-size: medium;
+    margin: 10px;
+}
+
+.rowSpan{
+    display: block;
+}
+
+.rowTitle{
+    font-size: large;
+    text-decoration: underline;
+    font-weight: 800;
+}

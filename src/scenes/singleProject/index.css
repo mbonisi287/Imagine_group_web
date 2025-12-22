@@ -1,0 +1,25 @@
+.projSp{
+    font-weight: 700 ;
+}
+
+.projectRow{
+    font-size: large;
+}
+
+.projTime{
+    background-color: black;
+    border-radius: 20px;
+    padding: 1%;
+    text-align: center;
+    color: #ffffff;
+    font-size: small;
+
+}
+
+.projTimeHeading{
+    text-decoration: underline;
+}
+
+.spanMod{
+    display: block;
+}

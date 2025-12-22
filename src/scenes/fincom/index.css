@@ -1,0 +1,46 @@
+.claimArea, .homeArea{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1%;
+    font-size: 1.4em;
+    border-radius: 25px;
+    
+}
+
+.lineInput{
+    width: 18%;
+    display: inline-block !important;
+    margin: 0px 2px;
+}
+
+.claimType{
+    width: 91%;
+}
+
+.claimsBtn{
+    width: 30%;
+    margin: 0px 5px;
+}
+
+.claimsDiv{
+    background-color: lightblue;
+    color:#ffffff;
+    border-radius: 25px;
+    padding: 2%;
+}
+
+.meetingDiv{
+    background-color: lightgreen;
+    color:#ffffff;
+    border-radius: 25px;
+    padding: 2%;
+}
+
+.claimsTableDiv{
+    border-radius: 25px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2%;
+    margin-top: 2%;
+
+}
