@@ -192,14 +192,55 @@ function Dashboard() {
 
   {/* Top 5 */}
 
+  const [ successMessageDownload, successMessageVisibleDownload ] = useState(false);
+  const [ successMessage, successMessageVisible ] = useState(false);
+
+  const [ showRedirectSpinner, setShowRedirectSpinner] = useState(false);
+  const [ showRedirectSpinnerDownload, setShowRedirectSpinnerDownload] = useState(false);
+  const [ redirectCountdown, setRedirectCountdown] = useState(5); 
+
+    /* Download */
+  const DownloadReport = async () => {
+    successMessageVisibleDownload(true);
+
+    // start the spinner and have a 10 second
+    setShowRedirectSpinnerDownload(true);
+
+    try{
+      const response  = await axios.get(API_URL + 'ReportPdf', {
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem("token")}`
+            },   
+            responseType: 'blob'        
+            
+            
+      });
+
+          const url = window.URL.createObjectURL(new Blob([response.data]));
+          const link = document.createElement('a');
+          link.href = url;
+          link.setAttribute('download', 'TPMS-Report.pdf');
+          //link.setAttribute('download', 'FM-Call-Center-Reports.pdf');
+          document.body.appendChild(link);
+          link.click();
+
+    }catch(error){
+       console.error("Download failed:", error)
+    } finally{
+       successMessageVisibleDownload(false);
+    }
+  };
+
 
   return (
+    <>
     <Box m="20px">
       <Box display="flex" justifyContent="space-between">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
         {!isXsDevices && (
           <Box>
             <Button
+              onClick={() =>  DownloadReport()}
               variant="contained"
               sx={{
                 bgcolor: colors.blueAccent[700],
@@ -506,6 +547,32 @@ function Dashboard() {
         </Box> 
       </Box>
     </Box>
+
+       {
+
+                 successMessageDownload &&          
+
+                    <div className="verifySuccess">
+                      {showRedirectSpinnerDownload && (
+                         <div className="overlay">
+                          <div className="spinner-border text-light" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                          </div>
+                          <p style={{ color: 'white', marginTop: '15px' , fontSize: '1.6em'}}>
+                            Your Report is being downloaded.
+                            
+                            Please wait while the report is being downloaded in {redirectCountdown} second{redirectCountdown !== 1 ? 's' : ''}...
+                            
+                          </p>
+                        </div>
+                      )}
+                       
+
+                    </div>
+
+              }
+
+              </>
   );
 }
 
