@@ -466,7 +466,7 @@ const Pipeline = () => {
                                         <td>{projects.stakeholders}</td>  
                                         <td>{projects.riskRating} %</td> 
                                         <td>{projects.probAward} %</td> 
-                                        <td>{projects.documentsAttached == 1 ? <button className='btn btn-primary'> View Documents </button> : ''}</td>
+                                        <td>{projects.documentsAttached == 1 ? <button className='btn btn-primary'> View Documents </button> : 'No Documents'}</td>
                                          <td> <button className='btn btn-info' onClick={() => ProjectDetails(projects)}> View More Details</button> </td> 
                                         {/*<td>{projects.department == 1 ? 'Imagine Eco Build Solutions' :
                                             projects.department == 2 ? 'Imagine Real Estate' : 'Qwabe Mahlase Construction'}
@@ -543,7 +543,7 @@ const Pipeline = () => {
                                         <td>{projects.stakeholders}</td>  
                                         <td>{projects.riskRating} %</td> 
                                         <td>{projects.probAward} %</td> 
-                                        <td>{projects.documentsAttached == 1 ? <button className='btn btn-primary'> View Documents </button> : ''}</td>
+                                        <td>{projects.documentsAttached == 1 ? <button className='btn btn-primary'> View Documents </button> : 'No documents'}</td>
                                          <td> <button className='btn btn-info' onClick={() => ProjectDetails(projects)}> View More Details</button> </td> 
                                         {/*<td>{projects.department == 1 ? 'Imagine Eco Build Solutions' :
                                             projects.department == 2 ? 'Imagine Real Estate' : 'Qwabe Mahlase Construction'}
@@ -677,14 +677,14 @@ const Pipeline = () => {
                                       <tr>
                                         <td> Date Conversion To Pipeline </td>
                                         <td> <CalendarMonthIcon /> {new Date(modalDataProject.dateCreated).toLocaleString('en-GB', {
-                                                                                                                                                                    day: '2-digit',
-                                                                                                                                                                    month: '2-digit',
-                                                                                                                                                                    year: 'numeric',
-                                                                                                                                                                    hour: '2-digit',
-                                                                                                                                                                    minute: '2-digit',
-                                                                                                                                                                    second: '2-digit',
-                                                                                                                                                                    hour12: true
-                                                                                                                                                                  })}</td>
+                                                                                                                                  day: '2-digit',
+                                                                                                                                  month: '2-digit',
+                                                                                                                                  year: 'numeric',
+                                                                                                                                  hour: '2-digit',
+                                                                                                                                  minute: '2-digit',
+                                                                                                                                  second: '2-digit',
+                                                                                                                                  hour12: true
+                                                                                                                                })}</td>
                                     </tr>
 
                                   </tbody>

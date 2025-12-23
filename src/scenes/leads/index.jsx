@@ -798,8 +798,11 @@ const Leads = () => {
                                 ( "NB: Complete All The Steps To Convert To Prospect   " )
                                 :
                                 (
-                                   
-                                    <button className="btn btn-success" onClick={() => ConvertLead(modalDataProject) }> Click Here To Convert to Prospect {modalDataProject.clientName} </button> 
+                                   modalDataProject.convStatus == 1 ? <span> </span>
+                                   :
+                                    <button className="btn btn-success" onClick={() => ConvertLead(modalDataProject) }> 
+                                    Click Here To Convert to Prospect {modalDataProject.clientName} </button> 
+                                     
                                    
                                 )
                               }

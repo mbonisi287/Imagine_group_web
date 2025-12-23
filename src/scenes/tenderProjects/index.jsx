@@ -208,7 +208,7 @@ const TenderProjects = () => {
 
       const projectUpdated = {
         ...editModalData,
-        status: selectedStatus
+        status: Number(selectedStatus)
       };
     
       try
@@ -415,9 +415,9 @@ const TenderProjects = () => {
                                     <td>
                                       { projects.status == 1 ? 
                                            <span className='statusProgress'> In Progess </span> :
-                                           projects.projectType == 2 ? <span className='statusReview'> In Review </span> :
-                                           projects.projectType == 3 ? <span className='statusReview'> Pipeline </span> :
-                                           <span className='statusReview'> Project/S - O - R </span> 
+                                           projects.status == 2 ? <span className='statusReview'> In Review </span> :
+                                           projects.status == 3 ? <span className='statusReview'> Awaiting Feedback </span> :
+                                           <span className='statusReview'> Ready For Submission </span> 
                                       }
                                     </td>  
                                     <td>     {new Date(projects.dateCreated).toLocaleString('en-GB', {                                                                               day: '2-digit',
@@ -508,7 +508,7 @@ const TenderProjects = () => {
                       handle={closeProjectModal}
                       backdrop="static"
                       size="xl"
-                      aria-labelledby="contained-modal-title-vcenter"
+                      aria-labelledby="contained-modal-edit-vcenter"
                       centered
                       keyboard={false}
                       dialogClassName="custom-modal-width-show">

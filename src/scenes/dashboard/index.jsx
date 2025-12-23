@@ -84,7 +84,7 @@ function Dashboard() {
     for(let i = 0; i < allTenders.length; i++)
     {
       var submittedStatus = JSON.stringify(allTenders[i].convStatus);
-      if(submittedStatus === '1')
+      if(submittedStatus === '1' || submittedStatus === '0' )
       {
         activeLeads.push(allTenders[i]);
       }
@@ -344,7 +344,7 @@ function Dashboard() {
                 fontWeight="600"
                 color={colors.gray[100]}
               >
-                Contract Value of Tender Submissions
+                Contract Value of Tender/Project Submissions
               </Typography>
               <Typography
                 variant="h5"

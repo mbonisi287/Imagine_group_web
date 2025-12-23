@@ -700,7 +700,7 @@ const Prospects = () => {
                                 <div className='col-4 progressArea'>
                                    <p> Status : {modalDataProject.CheckList  == 0 ? 
                                           <span className='statusReview'> Incomplete </span> :
-                                          <span className='statusProgress'> In Review  </span> } 
+                                          <span className='statusProgress'> Completed </span> } 
                                             
                                   </p>
                                   <hr />
@@ -763,9 +763,12 @@ const Prospects = () => {
                               {/*<Link to={`/tenderFeedback/${modalDataProject.id}`}> <button className="btn btn-success" > Write Feedback on Client Name: {modalDataProject.clientName} </button> </Link> */}
                                 { 
                                     modalDataProject.firstMeet == 1 ?  
-                                (   <button className="btn btn-success" onClick={() => convertProspect(modalDataProject) }> 
-                                    Click Here To Convert to Pipeline {modalDataProject.clientName} </button> 
-                                     )
+                                (   
+                                    modalDataProject.convStatus == 1 ?      ''       :
+                                    
+                                    <button className="btn btn-success" onClick={() => convertProspect(modalDataProject) }> 
+                                        Click Here To Convert to Pipeline {modalDataProject.clientName} </button> 
+                                )
                                 :
                                 (
                                   <span className='notesDangerSpan'> NB: Complete All The Steps To Convert To Pipeline  </span>                                

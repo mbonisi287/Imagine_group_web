@@ -660,7 +660,7 @@ const Mancom = () => {
                           dialogClassName="custom-modal-width">
                             <ModalHeader>
                               <button className="btn btn-primary" onClick={closeEditModal}> Close </button>
-                              <Modal.Title> {editModalData.meetingID} Edit Meeting Details for -  { editModalData.meetingName }</Modal.Title>
+                              <Modal.Title> Edit Meeting Details for -  { editModalData.meetingName }</Modal.Title>
                               
     
                             </ModalHeader>
